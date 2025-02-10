@@ -1,0 +1,22 @@
+.about-me{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    column-gap: 30px;
+    
+}
+
+.desc{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.img{
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+}
