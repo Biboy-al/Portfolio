@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, Signal } from '@angular/core';
 
 @Component({
   selector: 'app-content-container',
@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './content-container.component.scss'
 })
 export class ContentContainerComponent {
-  content = input("");
+  title = input("hi");
 }

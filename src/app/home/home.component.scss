@@ -1,8 +1,9 @@
 .home-page{
     background-color: #2E1A2D;
     display: flex;
-    min-height: 500px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
+   
 }
