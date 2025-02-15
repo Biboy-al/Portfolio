@@ -1,7 +1,10 @@
 <div class="container">
     <h2 class="title">{{title()}}</h2>
 
-    <div class="content">
+    <div [class]= "!showBackground() ? 'content-normal' : 'content-with-background'">
+        <div class="program-header">
+            <p>{{title()}}</p>
+        </div>
         <ng-content ></ng-content>
     </div>
     

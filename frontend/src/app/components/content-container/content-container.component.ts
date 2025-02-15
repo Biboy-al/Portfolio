@@ -8,4 +8,5 @@ import { Component, input, Signal } from '@angular/core';
 })
 export class ContentContainerComponent {
   title = input("hi");
+  showBackground = input<boolean>(false)
 }
