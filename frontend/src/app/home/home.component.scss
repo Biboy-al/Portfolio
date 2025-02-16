@@ -1,5 +1,8 @@
 .home-page{
     background-color: #2E1A2D;
+    
+    background: rgb(97,53,95);
+    background: radial-gradient(circle, rgba(97,53,95,1) 0%, rgba(33,13,33,1) 100%, rgba(56,49,49,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +26,6 @@
       transparent 1px,
       transparent 2px
     );
+
+    pointer-events: none;
   }

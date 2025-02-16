@@ -1,7 +1,14 @@
-.project{
+:host{
+    display: flex;
+    justify-content: center;
     
     background-color: gray;
-    flex:1;
-    
-   
+    flex: 1;
+    margin: 5px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    font-family: Monaco, Consolas, monospace;
+    text-shadow: 0 0 1px black;
 }
