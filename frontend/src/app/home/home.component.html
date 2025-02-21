@@ -5,16 +5,13 @@
 
 
 
-    <app-content-container [title] = "'Guest@linux:~$ show-skills'" [showBackground]=true>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
-        <app-skill/>
+    <app-content-container  [title] = "'Guest@linux:~$ show-skills'" [showBackground]=true >
+        
+
+        @for (skill of skillsList; track skill._id) {
+    
+            <app-skill  [skillData]="skill"/>
+        }
         
     </app-content-container>
 
@@ -30,6 +27,10 @@
         <app-project>
             <p>dadawd</p>
         </app-project>
+        <app-project>
+            <p>dadawd</p>
+        </app-project>
+        
     </app-content-container>
 
 </div>
