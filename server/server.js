@@ -6,7 +6,7 @@ const app = express()
 const PORT = 8080
 
 const corsOptions ={
-    origin:'http://localhost:4200/', 
+    origin:'http://localhost:4200', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
  }
@@ -19,10 +19,10 @@ const skillsRouter = require('./routes/skills');
 const projectsRouter = require('./routes/projects');
 
 //middleware
+app.use(cors(corsOptions));
 app.use('/skills', skillsRouter);
 app.use('/projects', projectsRouter);
 app.use(express.json());
-app.use(cors(corsOptions));
 
 //have the server listen
 app.listen(

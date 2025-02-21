@@ -4,25 +4,25 @@ const router = express.Router();
 
 
 router.get( '/', async (req, res) =>{
-    res.status(200).send(
+    res.send(
       await Skill.find()
     )
 });
 
 router.post( '/', (req, res) =>{
-  res.status(200).send({
+  res.send({
       "hi":"hi"
     })
 });
 
 router.delete( '/', (req, res) =>{
-  res.status(200).send({
+  res.send({
       "hi":"hi"
     })
 });
 
 router.put( '/', (req, res) =>{
-  res.status(200).send({
+  res.send({
       "hi":"hi"
     })
 });
