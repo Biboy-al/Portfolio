@@ -1,9 +1,10 @@
 :host{
     display: flex;
     justify-content: center;
-    
-    background-color: gray;
+    padding: 5px;
+  
     flex: 1;
+    flex-wrap: wrap;
     margin: 5px;
     border-top: 3px solid white;
     border-left: 3px solid white;
@@ -11,4 +12,5 @@
     border-bottom: 3px solid black;
     font-family: Monaco, Consolas, monospace;
     text-shadow: 0 0 1px black;
+    
 }

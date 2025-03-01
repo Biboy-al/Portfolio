@@ -7,8 +7,6 @@ const PORT = 8080
 
 const corsOptions ={
     origin:'http://localhost:4200', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
  }
 
 //import database

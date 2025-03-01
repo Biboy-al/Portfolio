@@ -9,5 +9,5 @@ import { Skill } from '../../types';
 })
 export class SkillComponent {
   @Input() skillData!:Skill;
-
+  
 }

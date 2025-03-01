@@ -41,7 +41,8 @@
 
 .program-header{
     
-    background-color: #1f235c;
+    //background-color: #1f235c;
+    background: linear-gradient(to right, #2a3b5a, #4a6b8f, #98a9c2);
     border: black;
     //box-shadow: 4px 4px 5px black;
     padding-left: 30px;
@@ -65,5 +66,4 @@ h2{
 p{
     color: white;
 }
-
 

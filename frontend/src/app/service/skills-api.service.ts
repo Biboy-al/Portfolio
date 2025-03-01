@@ -10,23 +10,7 @@ import { Skill } from '../types';
 
 export class SkillsApiService {
 
-  protected skillsList : Skill[] = [
-    {
-
-      "_id": "67b55922ba915c84209f9450",
-      name: "Java",
-      desc: "aaaa",
-      "prof": "",
-      "img": "",
-    },
-    {
-      _id: "67b5601aa7ddf5bba7d4ca43",
-      name: "Java",
-      desc: "aaaa",
-      prof: "",
-      img: "",
-    }
-  ]
+  protected skillsList : Skill[] =[]
 
   constructor() { 
 

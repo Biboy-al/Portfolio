@@ -1,30 +1,34 @@
 .skill{
     //background-color: gray;
     display: flex;
+    width: 300px;
+    height: 300px;
     
-    width: 125px;
-    height: 200px;
-    margin: 5px;
-    //border-top: 3px solid white;
-    //border-left: 3px solid white;
-    //border-right: 3px solid black;
-    //border-bottom: 3px solid black;
+    padding: 20px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
     color:black;
-    justify-content: center;
-    align-items: center;
+ 
     flex-direction: column;
     font-family: Monaco, Consolas, monospace;
     text-shadow: 0 0 1px black;
 }
 
-.desc{
-    display: none;
-    background-color: #feff9c;
-    width: 200px;
-    height: 200px;
-
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border:2px solid gray;
+    border-radius: 3px;
+    width:100%;
+    
 }
 
-.skill:hover .desc{
-    display: block;
+.desc{
+
+    
+    
+
 }

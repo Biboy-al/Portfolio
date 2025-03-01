@@ -1,0 +1,17 @@
+<div class="skill-selector">
+
+    <div class="buttons">
+        @for (skill of skillsList; track skill._id) {
+            <button (click)="selected = skill.name">{{skill.name}} </button>
+        }
+    </div>
+
+    
+    
+    @for (skill of skillsList; track skill._id) {
+        <div *ngIf="selected === skill.name">
+            <app-skill  [skillData]="skill"/>
+        </div>        
+    }
+
+</div>
