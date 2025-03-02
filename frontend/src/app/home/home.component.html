@@ -3,28 +3,32 @@
         <app-about-me/>
     </app-content-container>
 
-    <app-content-container  [title] = "'System Descriptions'" [showBackground]=true >
+    <app-content-container  [showBackground]=true >
+        <app-screen [title] = "'System Descriptions'">
+            <app-multi-picker/>
+        </app-screen>
+        
 
-        <app-multi-picker/>
-    
+        
     </app-content-container>
 
 
-    <app-content-container  [title] = "'Properties Skills'" [showBackground]=true >
-
-        <app-skill-selector/>
-    
+    <app-content-container   [showBackground]=true >
+        <app-screen [title] = "'Properties Skills'">
+            <app-skill-selector/>
+        </app-screen>
     </app-content-container>
 
 
 
-    <app-content-container [title] = "'Show Projects'" [showBackground]=true>
+    <app-content-container  [showBackground]=true>
+        <app-screen [title] = "'Show Projects'">
+            @for(project of projectList; track project._id){
+                <app-project [title]="project.name" [desc] = "project.desc" [img] = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDYmjwWxxTktF0N5pcQGMvsLZF7_CEqMN2A&s'"/>
+            }
+        </app-screen>
 
-        @for(project of projectList; track project._id){
-            <app-project [title]="project.name" [desc] = "project.desc" [img] = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDYmjwWxxTktF0N5pcQGMvsLZF7_CEqMN2A&s'"/>
-        }
-        
-        
+    
     </app-content-container>
 
 </div>

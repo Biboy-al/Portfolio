@@ -8,7 +8,7 @@
 
 .picker{
     background-color: white;
-    height: 100px;
+    height: 400px;
     width: 100px;
     margin: 5px;
     border-left: 3px solid black;
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 100px;
+    height: 400px;
     width: 700px;
     margin: 5px;
     padding-left: 5px;
@@ -46,7 +46,20 @@ li{
     margin: 5px;
 }
 
-#selected{
-    background-color: blue;
+button{
+    border:none;
+    background-color: white;
+    font-family: Monaco, Consolas, monospace;
+    text-shadow: 0 0 1px black;
+}
+
+button:hover{
     color: white;
+    background-color: blue;
+}
+
+
+select{
+    font-weight: bold;
+
 }

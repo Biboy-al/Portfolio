@@ -9,11 +9,12 @@ import { ProjectsApiService } from '../service/projects-api.service';
 import { SkillSelectorComponent } from '../components/skill-selector/skill-selector.component';
 import { CommonModule } from '@angular/common';
 import { MultiPickerComponent } from "../components/multi-picker/multi-picker.component";
+import { ScreenComponent } from "../components/screen/screen.component";
 
 
 @Component({
   selector: 'app-home',
-  imports: [AboutMeComponent, ContentContainerComponent, ProjectComponent, SkillSelectorComponent, CommonModule, MultiPickerComponent],
+  imports: [AboutMeComponent, ContentContainerComponent, ProjectComponent, SkillSelectorComponent, CommonModule, MultiPickerComponent, ScreenComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,0 +1,12 @@
+
+<div [class]= "'screen'" cdkDrag [cdkDragFreeDragPosition]="dragPosition">
+
+    <div class="program-header">
+        <p>{{title()}}</p>
+    </div>
+
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+
+</div>

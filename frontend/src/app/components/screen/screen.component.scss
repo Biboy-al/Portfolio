@@ -1,0 +1,35 @@
+.screen{
+    display: flex;
+    flex-direction: column;
+    background-color: #c0c0c0;
+    box-shadow: 4px 4px 5px black;
+    padding: 2px;
+    //max-width: 80%;
+    
+    
+}
+
+
+.program-header{
+    
+    //background-color: #1f235c;
+    background: linear-gradient(to right, #2a3b5a, #4a6b8f, #98a9c2);
+    border: black;
+    //box-shadow: 4px 4px 5px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box; 
+    border: 2px solid black;
+    width: 100%;
+    font-family: Monaco, Consolas, monospace;
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+
+.content{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
