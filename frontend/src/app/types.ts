@@ -8,6 +8,7 @@ export interface Skill{
 }
 
 export interface Project{
+  _id: string;
   name: string;
   desc: string;
   img: string;

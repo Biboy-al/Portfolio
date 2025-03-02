@@ -3,4 +3,14 @@ footer{
     padding: 15px;
     display: flex;
     justify-content: center;
+    color: white;
+    font-family: Monaco, Consolas, monospace;
+    text-shadow: 0 0 2px white;
+}
+
+ul{
+    list-style-type:none;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
 }

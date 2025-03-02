@@ -5,20 +5,27 @@ import { ContentContainerComponent } from '../components/content-container/conte
 import { ProjectComponent } from '../components/project/project.component';
 import { Skill, Project } from '../types';
 import { SkillsApiService } from '../service/skills-api.service';
+import { ProjectsApiService } from '../service/projects-api.service';
 import { SkillSelectorComponent } from '../components/skill-selector/skill-selector.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
-  imports: [AboutMeComponent, ContentContainerComponent, ProjectComponent, SkillSelectorComponent],
+  imports: [AboutMeComponent, ContentContainerComponent, ProjectComponent, SkillSelectorComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  projectsList : Project[] = [];
+  projectList : Project[] = [];
   
   skillService = inject(SkillsApiService);
+  projectService = inject(ProjectsApiService);
 
   constructor(){
+    this.projectService.getAllProjects().then((projects : Project[])=>{
+
+      this.projectList = projects;
+    });
   }
 }

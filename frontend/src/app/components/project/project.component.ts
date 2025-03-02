@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, input} from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -8,5 +8,8 @@ import { Component} from '@angular/core';
 
 })
 export class ProjectComponent {
-
+  img = input(""); 
+  desc = input(""); 
+  link = input(""); 
+  title = input(""); 
 }
