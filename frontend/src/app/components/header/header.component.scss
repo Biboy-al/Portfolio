@@ -1,11 +1,15 @@
 header{
-    background-color: #261d35;
-    
+    //background-color: #261d35;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    z-index: 1;
     padding: 15px;
     display: flex;
     justify-content: center;
     font-family: Monaco, Consolas, monospace;
     text-shadow: 0 0 2px white;
+    width: 100%;
 }
 
 h2{
